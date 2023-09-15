@@ -1,0 +1,520 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --accent: #A770F0;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+  
+  html {
+    font-family: monospace;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: var(--black);
+    color: var(--white);
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
+  .opaque {
+    opacity: 0.8;
+  }
+
+  .button {
+    border: 1px solid var(--accent);
+    border-radius: 1px;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .button:hover {
+    background-color: var(--accent);
+  }
+
+  body, header {
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 65px;
+    z-index: 2;
+    background-color: var(--black);
+  }
+
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent);
+    border-radius: 1px;
+  }
+
+  .logo:hover {
+    background: radial-gradient(circle, pink, var(--accent), var(--accent), cyan, blue);
+    color: var(--white);
+    animation: shine 10s ease-in-out infinite alternate;
+    background-size: 900% auto;
+  }
+
+  .logo p {
+    font-weight: bold;
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vw;
+    margin: auto 0;
+    padding-left: 0;
+  }
+  
+  .menu li {
+    list-style: none;
+    margin: auto;
+  }
+  
+  .menu a {
+    opacity: 0.7;
+  }
+
+  .menu a:hover {
+    opacity: 1;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    width: 100vw;
+    height: 100vh;
+    padding: 65px 10vw;
+  }
+
+  .welcome-section {
+    display: flex;
+  }
+
+  .welcome-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+
+  .wrapper {
+    width: fit-content;
+  }
+
+  .wrapper h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--accent);
+    animation: typing 3s steps(14, end) 0s 3 alternate forwards, blinking 1s step-end infinite;
+  }
+
+  .welcome-text p {
+    margin-top: 30px;
+  }
+
+  .welcome-text .button {
+    margin-top: 30px;
+  }
+  
+  .welcome-text a {
+    text-decoration: none;
+  }
+
+  .welcome-picture {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto 0;
+  }
+
+  .welcome-picture img {
+    width: 20vw;
+    max-width: 300px;
+    margin: 0 17vh;
+  }
+
+  .current {
+    border: 1px solid var(--white);
+    width: 25vw;
+    max-width: 380px;
+    padding-left: 15px;
+    margin: 0 11vh;
+  }
+
+  .git-link {
+    position: fixed;
+    top: 0;
+    left: 2vw;
+    font-size: 30px;
+    z-index: 2;
+  }
+
+  .git-link div {
+    width: 0px;
+    height: 35vh;
+    margin-bottom: 10px;
+    opacity: 0.5;
+  }
+
+  .git-link div::before {
+    content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+    position: fixed;
+    font-size: 25px;
+    text-decoration: wavy underline var(--white);
+    color: transparent;
+    transform: rotate(90deg);
+    left: -173px;
+  }
+
+  .git-link a {
+    opacity: 0.5;
+  }
+
+  .git-link a:hover {
+    opacity: 1;
+  }
+
+  .about-me-section, .projects-section, .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    font-size: 26px;
+  }
+
+  .section-title h2 {
+    margin: auto 0;
+    font-weight: lighter;
+  }
+
+  .section-title div {
+    width: 40vw;
+    height: 0px;
+    border: 1px solid var(--accent);
+    margin: auto 0;
+    margin-left: 20px;
+  }
+
+  .section-title a {
+    font-size: 18px;
+    margin: auto 0;
+    margin-left: auto;
+  }
+
+  .about-me-content {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+    gap: 50px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 50px;
+  }
+
+  .about-me-content h2 {
+    font-size: 24px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .about-me p {
+    font-size: 20px;
+  }
+
+  .section-title a:hover {
+    text-decoration: wavy underline;
+  }
+
+  .years {
+    margin: 0;
+    display: flex;
+  }
+
+  .years p {
+    margin: auto 0;
+    font-size: 20px;
+    width: 100px;
+  }
+  
+  .years p.gradient {
+    font-size: 60px;
+    font-weight: bold;
+    width: 45px;
+    background: linear-gradient(45deg, pink, var(--accent), var(--accent), cyan, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 50px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin: 0px;
+  }
+
+  .skill-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .skill-bar {
+    height: 14px;
+    background: #282828;
+    border-radius: 10px;
+  }
+
+  .skill-per {
+    height: 14px;
+    background: var(--accent);
+    border-radius: 10px;
+    position: relative;
+    animation: fillBars 30s;
+  }
+
+  .skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  .skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--white);
+    color: var(--black);
+    top: -20px;
+    right: 0px;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+
+  .projects-content {
+    display: flex;
+    margin: auto;
+    height: 440px;
+    width: 80vw;
+    max-width: fit-content;
+    gap: 30px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 350px;
+    scroll-snap-align: center;
+  }
+
+  .project-container img {
+    margin: auto;
+    width: 348px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .languages {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+  }
+  
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .project-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-summary h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .project-summary p {
+    margin: 0;
+  }
+
+  .project-details a {
+    margin: 0 auto;
+    margin-top: auto;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .connect {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 25px;
+  }
+
+  .social {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .textcircle {
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    transform-origin: 250px 250px;
+  }
+  
+  text {
+    fill: white;
+    font-size: 30px;
+    animation: rotate 25s linear infinite;
+    transform-origin: 250px 250px;
+  }
+
+  .social a {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 40px;
+  }
+
+  .email:hover {
+    color: #DC4234;
+  }
+
+  .linkedin:hover {
+    color: #0A66C2;
+  }
+
+  .discord:hover {
+    color: #5865F2;
+  }
+
+  .footer {
+    padding: 25px 0;
+    border-top: 1px solid var(--white);
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .developer:hover {
+    color: var(--accent);
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blinking {
+    0% {border-color: transparent;}
+    50% {border-color: var(--accent);}
+    100% {border-color: transparent;}
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes fillBars {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }

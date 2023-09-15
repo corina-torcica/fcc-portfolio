@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/637bcc8c75.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="navbar" id="navbar">
+      <a class="logo-link" href="#welcome">
+        <div class="logo">
+          <p>C.</p>
+        </div>
+      </a>
+      <ul class="menu">
+        <li>
+          <a class="nav-link" href="#welcome">
+            <p><span class="accent">#</span>welcome</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#about-me">
+            <p><span class="accent">#</span>about-me</p></a>
+        </li>
+        <li>
+          <a class="nav-link" href="#projects">
+            <p><span class="accent">#</span>projects</p></a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact">
+            <p><span class="accent">#</span>contact-me</p></a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- WELCOME -->
+      <section class="welcome-section" id="welcome">
+        <!-- SECTION TEXT -->
+        <div class="welcome-text">
+          <h1>I'm Corina, a <span class="accent">data scientist</span> and</h1>
+          <div class="wrapper">
+            <h1><span class="accent">web developer</span>.</h1>
+          </div>
+          <p class="opaque">You'll probably find me in front of my laptop with a cup of coffee, either working on a coding project or reading about the latest tech news. Nice to meet you!</p>
+          <a class="nav-link" href="#about-me"><div class="button">My story &darr;</div></a>
+        </div>
+        <!-- SECTION PICTURE -->
+        <div class="welcome-picture">
+          <img src="portfolio-picture.png" alt="portfolio-picture" loading="lazy"/>
+          <div class="current">
+            <p><span class="accent">&#9632;</span> <span class="opaque">Currently working on</span> <a href="https://www.freecodecamp.org/learn" target="_blank">freeCodeCamp</a></p>
+          </div>
+        </div>
+
+        <div class="git-link">
+          <div></div>
+          <a href="https://github.com/corinatorcica" target="_blank">
+            <i class='bx bxl-github' ></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT ME -->
+      <section class="about-me-section" id="about-me">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+          <h2><span class="accent">#</span>about-me</h2>
+          <div class="opaque"></div>
+          <a href="https://1drv.ms/b/s!AkM1gsQPweg6iVBVviFXTYnLw4kG?e=86IGmh" target="_blank"><p>View my resume &#8669;</p></a>
+        </div>
+        <!-- SECTION CONTENT -->
+        <div class="about-me-content">
+          <div class="about-me">
+            <h2>BSc (Hons.) Philosophy, Politics and Economics with Data Science graduate.</h2>
+            <p class="opaque">Graduated in 2023 from UCL and started pursuing freeCodeCamp's learning path to become a software engineer.</p>
+            <div class="years">
+              <p class="gradient">3</p>
+              <p>Years of experience</p>
+            </div>
+          </div>
+
+          <div class="experience">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="75%" style="max-width: 75%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="60%" style="max-width: 60%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-name">R</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="50%" style="max-width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects-section" id="projects">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+          <h2><span class="accent">#</span>projects</h2>
+          <div></div>
+          <a href="https://github.com/corinatorcica?tab=repositories" target="_blank"><p>View all &#8669;</p></a>
+        </div>
+        <!-- SECTION CONTENT -->
+        <div class="projects-content">
+          <div class="project-container">
+            <img src="product-picture.png" alt="Product Landing Page" loading="lazy">
+            <div class="languages">
+              <p class="opaque">HTML & CSS</p>
+            </div>
+            <div class="project-details">
+              <div class="project-summary">
+                <h3 class="project-title">Product Landing</h3>
+                <p class="opaque">Webpage advertising the Barava smart light.</p>
+              </div>
+              <a href="https://corinatorcica.github.io/product-landing/"><div class="button">Live &#8621;</div></a>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <img src="documentation-picture.png" alt="Technical Documentation Page" loading="lazy">
+            <div class="languages">
+              <p class="opaque">HTML & CSS</p>
+            </div>
+            <div class="project-details">
+              <div class="project-summary">
+                <h3 class="project-title">Technical Documentation</h3>
+                <p class="opaque">Webpage providing technical documentation for the JavaScript programming language.</p>
+              </div>
+              <a href="https://corinatorcica.github.io/technical-documentation/"><div class="button">Live &#8621;</div></a>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <img src="tribute-picture.png" alt="Tribute Page" loading="lazy">
+            <div class="languages">
+              <p class="opaque">HTML & CSS</p>
+            </div>
+            <div class="project-details">
+              <div class="project-summary">
+                <h3 class="project-title">Tribute Page</h3>
+                <p class="opaque">Webpage created as a tribute to the English band Daughter.</p>
+              </div>
+              <a href="https://corinatorcica.github.io/tribute-page/"><div class="button">Live &#8621;</div></a>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <img src="survey-picture.png" alt="Product Landing Page" loading="lazy">
+            <div class="languages">
+              <p class="opaque">HTML & CSS</p>
+            </div>
+            <div class="project-details">
+              <div class="project-summary">
+                <h3 class="project-title">Survey Form</h3>
+                <p class="opaque">Webpage presenting a survey encouraging self-reflection.</p>
+              </div>
+              <a href="https://corinatorcica.github.io/survey-form/"><div class="button">Live &#8621;</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+          <h2><span class="accent">#</span>contact-me</h2>
+          <div></div>
+        </div>
+        <!-- SECTION CONTENT -->
+        <div class="contact-content">
+          <div class="connect">
+            <p>Let's connect.</p>
+          </div>
+          <div class="social-links">
+            <div class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                <defs>
+                  <path id="textcircle" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate (12,250,250)" />
+                </defs>
+                <g class="textcircle">
+                  <text>
+                    <textpath xlink:href="#textcircle" aria-label="CSS & SVG are awesome" textlength="950">
+                      Email | Email | Email | Email | Email | Email | Email | &#160;
+                    </textpath>
+                  </text>
+                </g>
+              </svg>
+              <a class="email" href="mailto:corinatorcica@gmail.com" target="_blank">
+                <i class='bx bxs-envelope' ></i>
+              </a>
+            </div>
+
+            <div class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                <defs>
+                  <path id="textcircle" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate (12,250,250)" />
+                </defs>
+                <g class="textcircle">
+                  <text>
+                    <textpath xlink:href="#textcircle" aria-label="CSS & SVG are awesome" textlength="950">
+                      LinkedIn | LinkedIn | LinkedIn | LinkedIn | LinkedIn | &#160;
+                    </textpath>
+                  </text>
+                </g>
+              </svg>
+              <a class="linkedin" href="https://www.linkedin.com/in/corina-torcica/" target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+              </a>
+            </div>
+
+            <div class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                <defs>
+                  <path id="textcircle" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate (12,250,250)" />
+                </defs>
+                <g class="textcircle">
+                  <text>
+                    <textpath xlink:href="#textcircle" aria-label="CSS & SVG are awesome" textlength="950">
+                      Discord | Discord | Discord | Discord | Discord | &#160;
+                    </textpath>
+                  </text>
+                </g>
+              </svg>
+              <a class="discord" href="https://discordapp.com/users/678215922409930772" target="_blank">
+                <i class='bx bxl-discord-alt'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer opaque">
+        <p>Designed and developed by <span class="developer">Corina Torcica</span> &copy; 2023.</p>
+        <p>This portfolio was created from scratch using knowledge acquired from a web development course, completed in 3 weeks.</p>
+      </div>
+    </footer>
+  </body>
+</html>
